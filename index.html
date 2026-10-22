@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vidhi – AI tools builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f4; --surface:#ffffff; --ink:#14202b; --muted:#506070; --line:#cfd8de; --accent:#0b7a85; --accent-ink:#ffffff;
+  --display:"Bricolage Grotesque","Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"Instrument Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1a21;--surface:#16252f;--ink:#e8eff3;--muted:#9fb1bd;--line:#2a3d4a;--accent:#4fc3cf;--accent-ink:#07161b;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0f1a21;--surface:#16252f;--ink:#e8eff3;--muted:#9fb1bd;--line:#2a3d4a;--accent:#4fc3cf;--accent-ink:#07161b;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header.hero{padding:88px 0 64px}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,8vw,5.2rem);line-height:1;letter-spacing:-.03em;margin:0 0 28px;max-width:14ch}
+.hero p.lead{font-size:1.2rem;max-width:56ch;color:var(--muted);margin:0 0 28px}
+.hero p.lead strong{color:var(--ink);font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.primary:hover{filter:brightness(1.1);background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+h2{font-family:var(--display);font-size:1.9rem;letter-spacing:-.02em;margin:0 0 8px}
+section{padding:48px 0;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 32px;max-width:60ch}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:28px;margin-bottom:24px}
+.case.lead-case{border-left:6px solid var(--accent)}
+.case h3{font-family:var(--display);font-size:1.5rem;margin:0 0 4px;letter-spacing:-.01em}
+.stack{color:var(--muted);font-size:.92rem;margin:0 0 20px}
+.cols{display:grid;grid-template-columns:140px 1fr;gap:10px 24px;margin:0}
+.cols dt{font-weight:600;color:var(--accent)}
+.cols dd{margin:0}
+.cols ul{margin:0;padding-left:18px}
+.cols li{margin-bottom:6px}
+.case .out{margin-top:20px;display:flex;flex-wrap:wrap;gap:16px;font-weight:500}
+.also{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.also div{border-top:3px solid var(--line);padding-top:14px}
+.also h3{font-family:var(--display);margin:0 0 4px;font-size:1.15rem}
+.also p{margin:0;color:var(--muted);font-size:.95rem}
+.skills{display:grid;grid-template-columns:140px 1fr;gap:10px 24px;margin:0}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--muted)}
+footer{padding:48px 0 64px;border-top:1px solid var(--line)}
+footer p{margin:0 0 6px}
+@media (max-width:640px){
+  .cols,.skills{grid-template-columns:1fr;gap:2px}
+  .cols dd,.skills dd{margin-bottom:12px}
+  header.hero{padding:56px 0 40px}
+  .case{padding:20px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>I build small AI tools that take work off people’s plates.</h1>
+  <p class="lead"><strong>Vidhi.</strong> Final-year B.Tech student (AI &amp; ML) at SRM Institute of Science and Technology, Chennai. I work across retrieval and LLM apps, full-stack web and cloud deployment, and I put what I build online so people can use it.</p>
+  <div class="links">
+    <a class="btn primary" href="#work">See the work</a>
+    <a class="btn" href="https://github.com/VIDHI-05-JAIN">GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/vidhi-jain005">LinkedIn</a>
+    <a class="btn" href="mailto:vidhij1512@gmail.com">Email</a>
+  </div>
+</header>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <p class="sub">Each project starts with the problem a person had, then what I built and how it works.</p>
+
+  <article class="case lead-case">
+    <h3>Multilingual document assistant</h3>
+    <p class="stack">AI Intern project, Techtinium Technologies · LangChain, FAISS, HuggingFace embeddings, OpenAI APIs</p>
+    <dl class="cols">
+      <dt>The problem</dt>
+      <dd>Answers were spread across 1,000+ documents from several sources, so finding one meant digging through files by hand.</dd>
+      <dt>What I built</dt>
+      <dd>A multilingual retrieval-based assistant that answers questions from those documents. It was an official company project, and I worked on it from ingestion through deployment.</dd>
+      <dt>How it works</dt>
+      <dd><ul>
+        <li>Preprocessing and indexing workflows for multi-source documents</li>
+        <li>Semantic search over a FAISS vector store with HuggingFace embeddings</li>
+        <li>LangChain and OpenAI APIs orchestrate retrieval and response generation</li>
+        <li>Modular, object-oriented code, built with a team using agile methods</li>
+      </ul></dd>
+    </dl>
+  </article>
+
+  <article class="case">
+    <h3>HashMatch</h3>
+    <p class="stack">Flask, React, Groq (LLaMA 3.3 70B)</p>
+    <dl class="cols">
+      <dt>The problem</dt>
+      <dd>Good hashtags differ by platform, and tailoring them for Instagram, Twitter and LinkedIn takes repeated guesswork.</dd>
+      <dt>What I built</dt>
+      <dd>A full-stack app that generates hashtags tailored to each platform.</dd>
+      <dt>How it works</dt>
+      <dd><ul>
+        <li>Structured JSON output from the model, so the interface can render it reliably</li>
+        <li>A second AI pass that checks each hashtag for relevance</li>
+        <li>CORS configured and API keys kept in environment variables for a production-ready deploy</li>
+      </ul></dd>
+    </dl>
+    <div class="out"><a href="https://github.com/VIDHI-05-JAIN">Code on GitHub</a></div>
+  </article>
+
+  <article class="case">
+    <h3>Smart Watchlist</h3>
+    <p class="stack">React, Node.js, JavaScript</p>
+    <dl class="cols">
+      <dt>The problem</dt>
+      <dd>A long list of stocks is hard to scan. You want to know which symbols need attention right now.</dd>
+      <dt>What I built</dt>
+      <dd>A watchlist that scores every symbol from 0 to 100 using a composite Signal Score.</dd>
+      <dt>How it works</dt>
+      <dd><ul>
+        <li>Score combines a volatility-adjusted z-score, volume anomaly and 52-week high/low crossings</li>
+        <li>Fan-out polling (one poll per symbol) with O(1) incremental rolling stats (EMA), keeping the poller separate from the API server</li>
+        <li>When the simulated data feed fails, the UI flags stale prices instead of blocking</li>
+      </ul></dd>
+    </dl>
+    <div class="out"><a href="https://smart-watchlist-three.vercel.app">Open the live app</a></div>
+  </article>
+
+  <article class="case">
+    <h3>House Price Prediction System</h3>
+    <p class="stack">XGBoost, Scikit-Learn, Streamlit, Pickle</p>
+    <dl class="cols">
+      <dt>The problem</dt>
+      <dd>A price model is only useful if someone can try it without opening a notebook.</dd>
+      <dt>What I built</dt>
+      <dd>A Streamlit dashboard that predicts prices in real time from a model trained on 4,000+ records with 40 features.</dd>
+      <dt>How it works</dt>
+      <dd><ul>
+        <li>EDA and feature engineering, then XGBoost hyperparameter tuning that raised R-squared from 0.31 to 0.42</li>
+        <li>Validated with MAE, RMSE and R-squared</li>
+      </ul></dd>
+    </dl>
+    <div class="out"><a href="https://chennai-house-predictor.streamlit.app">Open the live app</a></div>
+  </article>
+</section>
+
+<section>
+  <h2>Also built</h2>
+  <p class="sub">Infrastructure and full-stack work that supports the tools above.</p>
+  <div class="also">
+    <div>
+      <h3>TaskCRUD DevOps pipeline</h3>
+      <p>AWS infrastructure with Terraform, Ansible playbooks, a Flask app on Kubernetes, and a Jenkins CI/CD pipeline with CloudWatch monitoring and a high-CPU alarm.</p>
+    </div>
+    <div>
+      <h3>Online Test System</h3>
+      <p>React, Node.js, Express and MySQL. Admins create, edit and publish tests. Students take timed attempts with automatic scoring.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>How I work</h2>
+  <p class="sub">I use AI coding assistants when I build. I direct them, read and test what they produce, and fix what doesn’t hold up. I’m happy to walk through any project’s code and the decisions behind it.</p>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Python, SQL, JavaScript</dd>
+    <dt>AI and ML</dt><dd>RAG, LangChain, FAISS, HuggingFace, OpenAI API, Groq API, XGBoost, Scikit-Learn, Pandas, NumPy</dd>
+    <dt>Web and backend</dt><dd>React.js, Node.js, Express.js, REST APIs, Flask, Streamlit</dd>
+    <dt>Cloud and DevOps</dt><dd>AWS (EC2, S3, CloudWatch), Docker, Kubernetes, Terraform, Ansible, Jenkins, Git, GitHub Actions</dd>
+    <dt>Leadership</dt><dd>Social Media Lead, ACM SIGAI, SRM (Aug 2025 – Mar 2026). Finalist, Innofusion hackathon series (Feb 2025).</dd>
+  </dl>
+</section>
+
+<footer>
+  <h2>Get in touch</h2>
+  <p><a href="mailto:vidhij1512@gmail.com">vidhij1512@gmail.com</a></p>
+  <p><a href="https://linkedin.com/in/vidhi-jain005">linkedin.com/in/vidhi-jain005</a></p>
+  <p><a href="https://github.com/VIDHI-05-JAIN">github.com/VIDHI-05-JAIN</a></p>
+</footer>
+</div>
+</body>
+</html>
